@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#0954C5, #225515);
+  background-repeat: no-repeat;
+}
+
+#top-holder {
+  display: inline-flex;
+}
+
+#figure-holder figure {
+  min-height: 15vh;
+  min-width: 10vw;
+  margin: 10px 0 0 30px;
+  background-image: url('../Resources/SiglaTrWheater.png');
+	background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title-holder {
+  min-width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-holder h1 {
+  color: white;
+}
+
+#content-holder {
+  display: inline-flex;
+  width: 100%;
+}
+
+#form-holder {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#form-holder label {
+  margin: 0 0 0 10px;
+  color: white;
+  display: inline-block;
+}
+
+#form-holder input:focus {
+  outline: none;
+}
+#form-holder form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#form-holder input {
+  display: inline-block;
+  min-height: 4vh;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#content-display #find-me {
+  min-height: 10vh;
+  min-width: 10vw;
+  background-color: transparent;
+  background-image: url('../Resources/LocationSing.png');
+	background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none; 
+  margin-bottom: 20px;
+}
+
+#content-display #find-me:focus {
+  outline: none;
+}
+
+#content-display #map-link {
+  text-decoration: none;
+  color: yellow;
+}
+
+#form-holder #submit {
+  background-color:transparent;
+  border-color: #F9D71C;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+}
+
+#form-holder #submit:focus {
+  outline: none;
+}
+
+#content-display {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#location,
+#degree {
+  margin: 30px 0;
+  color: white;
+  font-size: 1.5em;
+}
+
+#map-link {
+  white-space: pre;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  #form-holder #find-me {
+    min-height: 2vh;
+    min-width: 2vw;
+  }
+  #content-display {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #figure-holder figure {
+    min-height: 20vh;
+    min-width: 15vw;
+  }
+  #form-holder #find-me {
+    min-height: 3vh;
+    min-width: 3vw;
+  }
+  #content-display {
+    width: 58%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #content-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #form-holder {
+    align-items: center;
+  }
+  #form-holder label {
+    text-align: center;
+    margin: 0;
+  }
+  #form-holder input {
+    width: 65%;
+    text-align: center;
+  }
+  #content-display {
+    width: 100vw;
+  }
+  #title-holder {
+    min-width: 75vw;
+  }
+  #title-holder h1 {
+    font-size: 1.5em;
+  }
+  #input-holder {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #figure-holder figure {
+    min-height: 15vh;
+    min-width: 15vw;
+    margin: 5px 0 0 10px;
+  }
+  #title-holder {
+    min-width: 80vw;
+  }
+  #title-holder h1 {
+    font-size: 1.3em;
+  }
+  #form-holder #find-me {
+    min-height: 5vh;
+    min-width: 5vw;
+  }
+  #input-holder {
+    padding-left: 22px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  #title-holder h1 {
+    font-size: 1.1em;
+  }
+  #title-holder {
+    min-width: 80vw;
+  }
+  #form-holder #find-me {
+    min-height: 5.5vh;
+    min-width: 5.5vw;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #title-holder h1 {
+    font-size: 1.1em;
+  }
+  #title-holder {
+    min-width: 80vw;
+  }
+  #form-holder #find-me {
+    min-height: 6.5vh;
+    min-width: 6.5vw;
+  }
+}
